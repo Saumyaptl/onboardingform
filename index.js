@@ -26,7 +26,7 @@ const upload = multer({
 }).single('picture')
 app.post('/viewprofile',upload, async (req, res) => {
         const profile = new Onboard({
-            picture:req.file.filename,
+            
             fullname: req.body.fullname,
             headline: req.body.headline,
             companyname: req.body.companyname,
