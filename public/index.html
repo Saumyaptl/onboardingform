@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding</title>
+
+
+  <style>
+    .cnt {
+      text-align: center;
+    }
+
+    .next {
+      padding: 10px 20px;
+      margin-bottom: 40px;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #009a9a;
+      border: none;
+      border-radius: 7px;
+      box-shadow: 0 5px #00cdcd;
+      text-decoration: none;
+    }
+
+    .next:hover {
+      background-color: #008080;
+    }
+
+    a:hover {
+      background-color: blanchedalmond;
+    }
+
+    body {
+      font-family: Calibri, Helvetica, sans-serif;
+      background-color: pink;
+    }
+
+    .container {
+      padding: 50px;
+      background-color: lightblue;
+    }
+
+    input[type=text],
+    input[type=password],
+    textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      background-color: orange;
+      outline: none;
+    }
+
+    div {
+      padding: 10px 0;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    .registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <table id="information " border="10" width="100%" bgcolor=" #009a9a">
+      <tr>
+        <td>
+          <a href="#generalinformation" style="text-decoration:none">
+            <font face="Verdana" size="5" color=black>
+              GENERAL INFORMATION
+
+            </font>
+          </a>
+        </td>
+        <td>
+          <a href="#Experince" style="text-decoration:none">
+            <font face="Verdana" size="5" color=black>
+              EXPERIENCE
+
+            </font>
+          </a>
+        </td>
+        <td>
+          <a href="#Skills" style="text-decoration:none">
+            <font face="Verdana" size="5" color=black>
+              SKILLS
+
+            </font>
+          </a>
+        </td>
+        <td>
+          <a href="#AddProject" style="text-decoration:none">
+            <font face="Verdana" size="5" color=black>
+              ADD PROJECT
+
+            </font>
+          </a>
+        </td>
+        <td>
+          <a href="#Addlicense" style="text-decoration:none">
+            <font face="Verdana" size="5" color=black>
+              ADD LICENSE AND CERTIFICATION
+
+            </font>
+          </a>
+        </td>
+        <td>
+          <a href="#Addcourse" style="text-decoration:none">
+            <font face="Verdana" size="5" color=black>
+              ADD COURSES
+
+            </font>
+          </a>
+        </td>
+        <td>
+          <a href="#contactinfo" style="text-decoration:none">
+            <font face="Verdana" size="5" color=black>
+              CONTACT INFORMATION
+
+            </font>
+          </a>
+        </td>
+      </tr>
+
+    </table>
+  </nav>
+  <form action="/viewprofile" method="POST" enctype="multipart/form-data">
+    <div class="container">
+      <center>
+        <h1> ONBOARDING FORM</h1>
+      </center>
+      <hr>
+
+      <div class="cnt">
+        
+          <div>
+            <table id="generalinformation">
+              
+              <tr>
+                <td>
+                  <center>
+                    <h1 >GENERAL INFORMATION</h1>
+                  </center>
+                  <img class="someClass" src="https://cdn.pixabay.com/photo/2016/04/26/12/25/male-1354358__340.png"
+                    width="200">
+          </div>
+          <div>
+            <label for="picture"><b>UPLOAD A FORMAL PROFILE PICTURE:</b></label>
+
+            <input type="file" name="picture" capture="user">
+          </div>
+          <label> <b>NAME </b></label>
+          <input type="text" name="fullname" placeholder="fullname" size="100">
+          <label> <b>HEADLINE: </b></label>
+          <input type="text" name="headline" placeholder="headline" size="100">
+
+
+          <a href="#Experince" class="next">Next</a>
+
+
+          </td>
+          </tr>
+          </table>
+        </div>
+      
+      <table id="Experince">
+        <tr>
+          <td>
+            <div class="cnt">
+
+              <label>  <center>
+                <h1> EXPERIENCE</h1>
+              </center></label>
+              <input type="text" name="companyname" placeholder="companyname" size="100">
+              <input type="text" name="position" placeholder="position" size="100">
+              <input type="text" name="dateofjoin" placeholder="joining_date" size="100">
+              <input type="text" name="dateofresign" placeholder="resign_date" size="100">
+              <input type="text" name=" workdescription" placeholder=" workdescription" size="100">
+              <input type="text" name="usedskills " placeholder="usedskills" size="100">
+              <a href="#Skills" class="next">Next</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="cnt">
+      <table id="Skills">
+        <tr>
+          <td>
+            
+              <label>
+                <center>
+                  <h1>SKILLS</h1>
+                </center>
+              </label>
+
+              <label for="text">write multiple skills which you know:</label>
+              <input type="text" id="text" name="skills" multiple size="200"><br><br>
+              <input type="text" name="yearofexperience " placeholder="yearofexperience" size="200">
+              <a href="#AddProject" class="next">Next</a>
+        
+          </td>
+        </tr>
+      </table>
+      </div>
+      <table id="AddProject">
+        <tr>
+          <td>
+            <div class="cnt">
+              <label>
+                <center>
+                  <h1>ADD PROJECT</h1>
+                </center>
+              </label>
+              <input type="text" name="projecttitle" placeholder="projecttitle" size="100">
+              <input type="text" name="projecturl" placeholder="projecturl" size="100">
+              <input type="text" name="projectdescription" placeholder="projectdescription" size="100">
+              <input type="text" name="projectduration" placeholder="projectduration" size="100">
+              <a href="#Addlicense" class="next">Next</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table id="Addlicense">
+        <tr>
+          <td>
+            <div class="cnt">
+              <label>
+                <center>
+                  <h1>ADD LICENSE AND CERTIFICATION</h1>
+                </center>
+              </label>
+              <input type="text" name="licensename" placeholder="licensename" size="100">
+              <input type="text" name="organization" placeholder="organization" size="100">
+              <input type="text" name="link" placeholder="link" size="15">
+              <input type="text" name="issuedate" placeholder="issuedate" size="100">
+              <a href="#Addcourse" class="next">Next</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table id="Addcourse">
+        <tr>
+          <td>
+            <div class="cnt">
+              <label>
+                <center>
+                  <h1>ADD COURSES</h1>
+                </center>
+              </label>
+              <input type="text" name=" course" placeholder=" course" size="100">
+              <input type="text" name="courseorganization" placeholder="courseorganization" size="100">
+              <input type="text" name="link" placeholder="link" size="100">
+              
+              <a href="#contactinfo" class="next">Next</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table id="contactinfo">
+        <tr>
+          <td>
+
+            <div class="cnt">
+              <label>
+                <center>
+                  <h1>CONTACT INFORMATION</h1>
+                </center>
+              </label><br>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email">
+              <label>
+                <B>Phone :</B>
+              </label>
+              <input type="text" name="country_code" placeholder="Country_Code" value="+91" size="2">
+              <input type="text" name="phone" placeholder="phone no." size="100">
+              <input type="text" name="skype" placeholder="skype" size="100">
+            </div>
+            <button type="submit" class="registerbtn">Submit</button>
+  </form>
+
+</body>
+
+</html>
